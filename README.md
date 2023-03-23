@@ -7,6 +7,7 @@
 
 It would be an interesting experiment to try to reproduce these results with these same prompts AND to test without the prompts emphasizing that "it loves to comment code" to see if the results would vary.  Given the nature of LLMs it would reasonable to assume some variation even with the same prompts and the overall conclusions will always lean more on the subjective side - it "feels" right...
 
+As a personal anecdote I will say that it seems that best results are achieved when "priming" ChatGPT with their persona and task AND reinforcing that in subsquent prompts.
 
 
 ## First I prompted ChatGPT-4 for javascript to solve an easy to verify problem.  I asked it to not comment the code.
