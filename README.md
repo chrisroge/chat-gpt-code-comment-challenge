@@ -65,8 +65,8 @@ console.log(areSubnetsIncluded(cidrArray1, cidrArray2)); // Output: true
 const cidrArray3 = ['192.168.1.0/24', '10.0.0.0/8'];
 const cidrArray4 = ['192.168.1.128/25', '172.16.0.0/12'];
 console.log(areSubnetsIncluded(cidrArray3, cidrArray4)); // Output: false
-In the first test case, the CIDR notations in cidrArray2 are subsets of the CIDR notations in cidrArray1, so the function returns true. In the second test case, the CIDR notations in cidrArray4 are not all subsets of the CIDR notations in cidrArray3, so the function returns false.
 ```
+> In the first test case, the CIDR notations in cidrArray2 are subsets of the CIDR notations in cidrArray1, so the function returns true. In the second test case, the CIDR notations in cidrArray4 are not all subsets of the CIDR notations in cidrArray3, so the function returns false.
   
 ### Interesting to note that it included comments in the test cases, likely because I did not reinforce this restriction in my prompt.
   
