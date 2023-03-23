@@ -19,7 +19,7 @@ Here's the function you requested:
 
 javascript
 Copy code
-function areSubnetsIncluded(cidrArray1, cidrArray2) {
+<code>function areSubnetsIncluded(cidrArray1, cidrArray2) {
   function parseCIDR(cidr) {
     const [address, mask] = cidr.split('/');
     const maskBits = -1 << (32 - +mask);
@@ -34,5 +34,5 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
   }
 
   return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1, cidr2)));
-}
+  }</code>
 This function takes two arrays of CIDR notations and returns true if all addresses in the second array are included in the first array.
