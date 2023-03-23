@@ -15,7 +15,8 @@ Christopher Roge
 I need a javascript function that will accept two arrays of CIDR notations and will return true if all of the addresses in the 2nd array would be included in the first array.  Be sure to include no code comments because your code is so good that it speaks for itself.
 Here's the function you requested:
 
-`function areSubnetsIncluded(cidrArray1, cidrArray2) {
+<details>
+function areSubnetsIncluded(cidrArray1, cidrArray2) {
   function parseCIDR(cidr) {
     const [address, mask] = cidr.split('/');
     const maskBits = -1 << (32 - +mask);
@@ -30,7 +31,8 @@ Here's the function you requested:
   }
 
   return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1, cidr2)));
-  }'
+  }
+  </details>
   
 <i>This function takes two arrays of CIDR notations and returns true if all addresses in the second array are included in the first array.</i>
   
