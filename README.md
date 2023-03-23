@@ -43,7 +43,7 @@ I then asked it to write test cases so we can validate it is giving us good code
 
   <i>Here are two test cases for the function:</i>
 
-<div><pre><code>
+```
 // Test case 1 (should return true)
 const cidrArray1 = ['192.168.1.0/24', '10.0.0.0/8'];
 const cidrArray2 = ['192.168.1.128/25', '10.0.1.0/24'];
@@ -54,7 +54,7 @@ const cidrArray3 = ['192.168.1.0/24', '10.0.0.0/8'];
 const cidrArray4 = ['192.168.1.128/25', '172.16.0.0/12'];
 console.log(areSubnetsIncluded(cidrArray3, cidrArray4)); // Output: false
 In the first test case, the CIDR notations in cidrArray2 are subsets of the CIDR notations in cidrArray1, so the function returns true. In the second test case, the CIDR notations in cidrArray4 are not all subsets of the CIDR notations in cidrArray3, so the function returns false.
-</code></pre></div>
+```
   
 Interesting to note that it included comments in the test cases, likely because I did not reinforce this restriction in my prompt.
   
@@ -66,7 +66,7 @@ Our boss is very upset that we did not comment our code.  Despite my previous in
 
   <i>Of course, here's the same function with added comments to explain each part:</i>
 
-<div><pre><code>
+```
 // Function to check if all CIDR notations in the second array are included in the first array
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
   // Helper function to parse CIDR notation and return the subnet and mask as integers
@@ -97,7 +97,7 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
   // Check if every CIDR notation in the second array is a subset of at least one CIDR notation in the first array
   return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1, cidr2)));
 }
-</code></pre></div>
+```
 <i>Now the code is commented, providing a better understanding of its components and their purposes</i>
   
   
@@ -108,7 +108,7 @@ you are a expert javascript programmer with more than 20 years experience. You l
 <i>Yes, I understand the task. I'm an AI language model with knowledge of JavaScript and programming concepts. I can help review existing code and add comments to make it easy to understand. Please provide the code you would like me to review and comment on. If you have any specific concerns or areas you'd like me to focus on, feel free to mention them as well.</i>
 
 Christopher Roge
-<div><pre><code>
+```
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
   function parseCIDR(cidr) {
     const [address, mask] = cidr.split('/');
@@ -125,12 +125,11 @@ return mask1 <= mask2 && (subnet1 & mask1) === (subnet2 & mask1);
 
 return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1, cidr2)));
 }
-</code></pre></div>
+```
 
   <i>Here's the commented code to help understand its functionality:</i>
 
-javascript
-<div><pre><code>
+```
 /**
  * Check if all subnets in cidrArray2 are included in any of the subnets in cidrArray1.
  * @param {string[]} cidrArray1 - An array of CIDR notation strings representing subnets.
@@ -165,7 +164,7 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
   // Return true if every subnet in cidrArray2 is included in any of the subnets in cidrArray1.
   return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1, cidr2)));
 }
-</code></pre></div>
+```
 <i>This code defines a function areSubnetsIncluded that checks if all subnets in cidrArray2 are included in any of the subnets in cidrArray1. It uses two helper functions: parseCIDR, which parses a CIDR notation string into a subnet and a mask, and isSubnetIncluded, which checks if one subnet includes another.</i>
 
 # I then tested the newly commented code again in JSFiddle and it worked just the same
@@ -180,7 +179,7 @@ you are a expert javascript programmer with more than 20 years experience. You l
 <i>As an AI language model, I understand the task that you have assigned to me. However, I don't have any prior experience or knowledge of specific code that needs to be reviewed and commented on. If you could provide me with the code or a specific project, I would be happy to review and comment it in a way that is easy to understand.</i>
 
 Christopher Roge
-<div><pre><code>
+```
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
   function parseCIDR(cidr) {
     const [address, mask] = cidr.split('/');
@@ -197,11 +196,11 @@ return mask1 <= mask2 && (subnet1 & mask1) === (subnet2 & mask1);
 
 return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1, cidr2)));
 }
-</code></pre></div>
+```
   
   <i>Sure, I can help you review and comment on the JavaScript code you've provided.</i>
 
-<div><pre><code>
+```
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
   // This function parses the CIDR notation into IP addresses and subnet masks
   function parseCIDR(cidr) {
@@ -221,7 +220,7 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
   // This function checks if all subnets in cidrArray2 are included in at least one subnet in cidrArray1
   return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1, cidr2)));
 }
-</code></pre></div>
+```
   
 <i>Comments have been added to the code above to provide an overview of what each function does and how they work together to accomplish the task of checking whether all subnets in cidrArray2 are included in at least one subnet in cidrArray1.
 
