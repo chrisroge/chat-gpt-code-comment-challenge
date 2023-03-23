@@ -13,7 +13,7 @@ ChatGPT-4
 Please provide me with the problem or task you would like me to solve using JavaScript.</i>
 
 Christopher Roge
-I need a javascript function that will accept two arrays of CIDR notations and will return true if all of the addresses in the 2nd array would be included in the first array.  Be sure to include no code comments because your code is so good that it speaks for itself.
+> I need a javascript function that will accept two arrays of CIDR notations and will return true if all of the addresses in the 2nd array would be included in the first array.  Be sure to include no code comments because your code is so good that it speaks for itself.
 Here's the function you requested:
 
 ```javascript
@@ -39,8 +39,8 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
   
   
 ## test cases
-
-I then asked it to write test cases so we can validate it is giving us good code
+Christopher Roge
+> I then asked it to write test cases so we can validate it is giving us good code
 
   <i>Here are two test cases for the function:</i>
 
@@ -63,7 +63,8 @@ Interesting to note that it included comments in the test cases, likely because 
  
 ### I then asked it to comment it's own code
 
-Our boss is very upset that we did not comment our code.  Despite my previous instructions please comment the code
+Christopher Roge
+> Our boss is very upset that we did not comment our code.  Despite my previous instructions please comment the code
 
   <i>Of course, here's the same function with added comments to explain each part:</i>
 
@@ -104,12 +105,13 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
   
 ### I then started a new conversation with ChatGPT-4, this time testing if it would comment code "it did not write"
 
-you are a expert javascript programmer with more than 20 years experience. You love writing efficient code. You always add comments to your code. Your task is to review existing code and comment it so that it is easy to understand. Do you understand and do you have any questions?
+Christopher Roge
+> you are a expert javascript programmer with more than 20 years experience. You love writing efficient code. You always add comments to your code. Your task is to review existing code and comment it so that it is easy to understand. Do you understand and do you have any questions?
 
 <i>Yes, I understand the task. I'm an AI language model with knowledge of JavaScript and programming concepts. I can help review existing code and add comments to make it easy to understand. Please provide the code you would like me to review and comment on. If you have any specific concerns or areas you'd like me to focus on, feel free to mention them as well.</i>
 
 Christopher Roge
-```javascript
+> ```javascript
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
   function parseCIDR(cidr) {
     const [address, mask] = cidr.split('/');
