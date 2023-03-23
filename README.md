@@ -62,6 +62,47 @@ In the first test case, the CIDR notations in cidrArray2 are subsets of the CIDR
 </code></pre></div>
   
 Interesting to note that it included comments in the test cases, likely because I did not reinforce this restriction in my prompt.
+  
+I then asked it to comment it's own code:
+
+Our boss is very upset that we did not comment our code.  Despite my previous instructions please comment the code
+
+Of course, here's the same function with added comments to explain each part:
+
+javascript
+<div><pre><code>
+// Function to check if all CIDR notations in the second array are included in the first array
+function areSubnetsIncluded(cidrArray1, cidrArray2) {
+  // Helper function to parse CIDR notation and return the subnet and mask as integers
+  function parseCIDR(cidr) {
+    // Split CIDR notation into address and mask
+    const [address, mask] = cidr.split('/');
+    
+    // Calculate the maskBits using a bitwise shift operation
+    const maskBits = -1 << (32 - +mask);
+    
+    // Convert the IP address to an integer
+    const ipInt = address.split('.').reduce((acc, octet) => (acc << 8) + +octet, 0);
+    
+    // Return the subnet and mask as integers
+    return [ipInt & maskBits, maskBits];
+  }
+
+  // Helper function to check if a CIDR range is included within another CIDR range
+  function isSubnetIncluded(cidr1, cidr2) {
+    // Parse the CIDR notations into subnet and mask integers
+    const [subnet1, mask1] = parseCIDR(cidr1);
+    const [subnet2, mask2] = parseCIDR(cidr2);
+    
+    // Check if cidr2 is a subset of cidr1
+    return mask1 <= mask2 && (subnet1 & mask1) === (subnet2 & mask1);
+  }
+
+  // Check if every CIDR notation in the second array is a subset of at least one CIDR notation in the first array
+  return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1, cidr2)));
+}
+</code></pre></div>
+Now the code is commented, providing a better understanding of its components and their purposes.
 
 
 
