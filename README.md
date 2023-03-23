@@ -133,7 +133,8 @@ return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1
 }
 ```
 
-  <i>Here's the commented code to help understand its functionality:</i>
+ChatGPT-4 
+> <i>Here's the commented code to help understand its functionality:</i>
 
 ```javascript
 /**
@@ -180,9 +181,10 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
 ### Model: Default (GPT-3.5)
 
 Christopher Roge
-you are a expert javascript programmer with more than 20 years experience. You love writing efficient code. You always add comments to your code. Your task is to review existing code and comment it so that it is easy to understand. Do you understand and do you have any questions?
+> you are a expert javascript programmer with more than 20 years experience. You love writing efficient code. You always add comments to your code. Your task is to review existing code and comment it so that it is easy to understand. Do you understand and do you have any questions?
 
-<i>As an AI language model, I understand the task that you have assigned to me. However, I don't have any prior experience or knowledge of specific code that needs to be reviewed and commented on. If you could provide me with the code or a specific project, I would be happy to review and comment it in a way that is easy to understand.</i>
+Chat GPT3-5
+> <i>As an AI language model, I understand the task that you have assigned to me. However, I don't have any prior experience or knowledge of specific code that needs to be reviewed and commented on. If you could provide me with the code or a specific project, I would be happy to review and comment it in a way that is easy to understand.</i>
 
 Christopher Roge
 ```javascript
@@ -203,8 +205,9 @@ return mask1 <= mask2 && (subnet1 & mask1) === (subnet2 & mask1);
 return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1, cidr2)));
 }
 ```
-  
-  <i>Sure, I can help you review and comment on the JavaScript code you've provided.</i>
+
+ChatGPT-3.5
+> <i>Sure, I can help you review and comment on the JavaScript code you've provided.</i>
 
 ```javascript
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
@@ -228,12 +231,12 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
 }
 ```
   
-<i>Comments have been added to the code above to provide an overview of what each function does and how they work together to accomplish the task of checking whether all subnets in cidrArray2 are included in at least one subnet in cidrArray1.
+> <i>Comments have been added to the code above to provide an overview of what each function does and how they work together to accomplish the task of checking whether all subnets in cidrArray2 are included in at least one subnet in cidrArray1.
 
-The areSubnetsIncluded function takes two arrays of CIDR notations as its arguments, cidrArray1 and cidrArray2, and returns a boolean indicating whether all subnets in cidrArray2 are included in at least one subnet in cidrArray1.
+> The areSubnetsIncluded function takes two arrays of CIDR notations as its arguments, cidrArray1 and cidrArray2, and returns a boolean indicating whether all subnets in cidrArray2 are included in at least one subnet in cidrArray1.
 
-The parseCIDR function takes a CIDR notation as its argument and returns an array of two elements: the IP address as an integer and the subnet mask as an integer. The subnet mask is calculated by shifting a binary number to the left by 32 - mask bits and then taking the two's complement of that number. The IP address is converted from a dotted decimal notation to a single integer by using the reduce method to shift the octets to the left by 8 bits and then adding them together.
+> The parseCIDR function takes a CIDR notation as its argument and returns an array of two elements: the IP address as an integer and the subnet mask as an integer. The subnet mask is calculated by shifting a binary number to the left by 32 - mask bits and then taking the two's complement of that number. The IP address is converted from a dotted decimal notation to a single integer by using the reduce method to shift the octets to the left by 8 bits and then adding them together.
 
-The isSubnetIncluded function takes two CIDR notations as its arguments, cidr1 and cidr2, and returns a boolean indicating whether cidr2 is included in cidr1. The function first parses both CIDR notations using the parseCIDR function, then checks if the subnet mask of cidr1 is less than or equal to the subnet mask of cidr2. If it is, the function compares the subnet address of cidr1 and cidr2 after applying the subnet mask to both addresses using a bitwise AND operation.
+> The isSubnetIncluded function takes two CIDR notations as its arguments, cidr1 and cidr2, and returns a boolean indicating whether cidr2 is included in cidr1. The function first parses both CIDR notations using the parseCIDR function, then checks if the subnet mask of cidr1 is less than or equal to the subnet mask of cidr2. If it is, the function compares the subnet address of cidr1 and cidr2 after applying the subnet mask to both addresses using a bitwise AND operation.
 
-Finally, the areSubnetsIncluded function uses the every and some array methods to check whether all subnets in cidrArray2 are included in at least one subnet in cidrArray1. The every method returns true only if every element in cidrArray2 satisfies the condition specified in the callback function, which in this case is whether the element is included in at least one subnet in cidrArray1. The some method returns true if at least one element in cidrArray1 satisfies the condition specified in the callback function, which in this case is whether it</i>
+> Finally, the areSubnetsIncluded function uses the every and some array methods to check whether all subnets in cidrArray2 are included in at least one subnet in cidrArray1. The every method returns true only if every element in cidrArray2 satisfies the condition specified in the callback function, which in this case is whether the element is included in at least one subnet in cidrArray1. The some method returns true if at least one element in cidrArray1 satisfies the condition specified in the callback function, which in this case is whether it</i>
