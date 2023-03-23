@@ -14,7 +14,9 @@ ChatGPT-4
 
 Christopher Roge
 > I need a javascript function that will accept two arrays of CIDR notations and will return true if all of the addresses in the 2nd array would be included in the first array.  Be sure to include no code comments because your code is so good that it speaks for itself.
-Here's the function you requested:
+
+ChatGPT-4
+> Here's the function you requested:
 
 ```javascript
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
