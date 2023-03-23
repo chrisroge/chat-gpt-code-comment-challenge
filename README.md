@@ -67,8 +67,8 @@ In the first test case, the CIDR notations in cidrArray2 are subsets of the CIDR
 Christopher Roge
 > Our boss is very upset that we did not comment our code.  Despite my previous instructions please comment the code
 
-ChatGPT-4 >
-<i>Of course, here's the same function with added comments to explain each part:</i>
+ChatGPT-4 
+><i>Of course, here's the same function with added comments to explain each part:</i>
 ```javascript
 // Function to check if all CIDR notations in the second array are included in the first array
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
@@ -114,7 +114,8 @@ ChatGPT-4
 > <i>Yes, I understand the task. I'm an AI language model with knowledge of JavaScript and programming concepts. I can help review existing code and add comments to make it easy to understand. Please provide the code you would like me to review and comment on. If you have any specific concerns or areas you'd like me to focus on, feel free to mention them as well.</i>
 
 Christopher Roge
-> ```javascript
+> 
+```javascript
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
   function parseCIDR(cidr) {
     const [address, mask] = cidr.split('/');
