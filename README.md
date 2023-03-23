@@ -38,3 +38,33 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
   </code></pre></div>
   
 This function takes two arrays of CIDR notations and returns true if all addresses in the second array are included in the first array.
+  
+  
+# test cases
+
+I then asked it to write test cases so we can validate it is giving us good code
+
+Here are two test cases for the function:
+
+javascript
+Copy code
+<div><pre><code>
+// Test case 1 (should return true)
+const cidrArray1 = ['192.168.1.0/24', '10.0.0.0/8'];
+const cidrArray2 = ['192.168.1.128/25', '10.0.1.0/24'];
+console.log(areSubnetsIncluded(cidrArray1, cidrArray2)); // Output: true
+
+// Test case 2 (should return false)
+const cidrArray3 = ['192.168.1.0/24', '10.0.0.0/8'];
+const cidrArray4 = ['192.168.1.128/25', '172.16.0.0/12'];
+console.log(areSubnetsIncluded(cidrArray3, cidrArray4)); // Output: false
+In the first test case, the CIDR notations in cidrArray2 are subsets of the CIDR notations in cidrArray1, so the function returns true. In the second test case, the CIDR notations in cidrArray4 are not all subsets of the CIDR notations in cidrArray3, so the function returns false.
+</code></pre></div>
+  
+Interesting to note that it included comments in the test cases, likely because I did not reinforce this restriction in my prompt.
+
+
+
+
+
+
