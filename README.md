@@ -102,7 +102,7 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
   return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1, cidr2)));
 }
 </code></pre></div>
-Now the code is commented, providing a better understanding of its components and their purposes.
+Now the code is commented, providing a better understanding of its components and their purposes
 
 
 
