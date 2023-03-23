@@ -1,10 +1,10 @@
 # chat-gpt-code-comment-challenge
 
-# First I prompted ChatGPT-4 for javascript to solve an easy to verify problem.  I asked it to not comment the code.
+## First I prompted ChatGPT-4 for javascript to solve an easy to verify problem.  I asked it to not comment the code.
 
-# Model: GPT-4
+### Model: GPT-4
 
-Christopher Roge
+> Christopher Roge
 you are a expert javascript programmer with more than 20 years experience.  You love writing efficient code.  You never add comments to your code because your code is so good it speaks for itself.  Your task is to write excellent code to solve the problem presented in the prompt.  Do you understand and do you have any questions?
 
 <i>Yes, I understand that I am an expert JavaScript programmer with over 20 years of experience and that I should write efficient and self-explanatory code to solve a given problem. However, I'd like to note that adding comments is generally considered a best practice in programming, as it helps others understand the code more easily.
@@ -37,7 +37,7 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
 <i>This function takes two arrays of CIDR notations and returns true if all addresses in the second array are included in the first array.</i>
   
   
-# test cases
+## test cases
 
 I then asked it to write test cases so we can validate it is giving us good code
 
@@ -58,9 +58,9 @@ In the first test case, the CIDR notations in cidrArray2 are subsets of the CIDR
   
 Interesting to note that it included comments in the test cases, likely because I did not reinforce this restriction in my prompt.
   
-# I then tested the code in JSFiddle and it worked fine  
+### I then tested the code in JSFiddle and it worked fine  
  
-# I then asked it to comment it's own code
+### I then asked it to comment it's own code
 
 Our boss is very upset that we did not comment our code.  Despite my previous instructions please comment the code
 
@@ -101,7 +101,7 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
 <i>Now the code is commented, providing a better understanding of its components and their purposes</i>
   
   
-# I then started a new conversation with ChatGPT-4, this time testing if it would comment code "it did not write"
+### I then started a new conversation with ChatGPT-4, this time testing if it would comment code "it did not write"
 
 you are a expert javascript programmer with more than 20 years experience. You love writing efficient code. You always add comments to your code. Your task is to review existing code and comment it so that it is easy to understand. Do you understand and do you have any questions?
 
@@ -167,11 +167,11 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
 ```
 <i>This code defines a function areSubnetsIncluded that checks if all subnets in cidrArray2 are included in any of the subnets in cidrArray1. It uses two helper functions: parseCIDR, which parses a CIDR notation string into a subnet and a mask, and isSubnetIncluded, which checks if one subnet includes another.</i>
 
-# I then tested the newly commented code again in JSFiddle and it worked just the same
+### I then tested the newly commented code again in JSFiddle and it worked just the same
 
-# Finally tested with ChatGPT3.5-turbo
+### Finally tested with ChatGPT3.5-turbo
 
-# Model: Default (GPT-3.5)
+### Model: Default (GPT-3.5)
 
 Christopher Roge
 you are a expert javascript programmer with more than 20 years experience. You love writing efficient code. You always add comments to your code. Your task is to review existing code and comment it so that it is easy to understand. Do you understand and do you have any questions?
