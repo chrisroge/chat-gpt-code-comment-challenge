@@ -17,7 +17,7 @@ Christopher Roge
 
 ChatGPT-4
 > Here's the function you requested:
-> ```javascript
+```javascript
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
   function parseCIDR(cidr) {
     const [address, mask] = cidr.split('/');
