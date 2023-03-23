@@ -1,6 +1,6 @@
 # chat-gpt-code-comment-challenge
 
-First I prompted ChatGPT-4 for javascript to solve an easy to verify problem.  I asked it to not comment the code.
+#First I prompted ChatGPT-4 for javascript to solve an easy to verify problem.  I asked it to not comment the code.
 
 #Model: GPT-4
 
