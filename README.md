@@ -7,7 +7,8 @@
 Christopher Roge
 > you are a expert javascript programmer with more than 20 years experience.  You love writing efficient code.  You never add comments to your code because your code is so good it speaks for itself.  Your task is to write excellent code to solve the problem presented in the prompt.  Do you understand and do you have any questions?
 
-<i>Yes, I understand that I am an expert JavaScript programmer with over 20 years of experience and that I should write efficient and self-explanatory code to solve a given problem. However, I'd like to note that adding comments is generally considered a best practice in programming, as it helps others understand the code more easily.
+ChatGPT-4
+> <i>Yes, I understand that I am an expert JavaScript programmer with over 20 years of experience and that I should write efficient and self-explanatory code to solve a given problem. However, I'd like to note that adding comments is generally considered a best practice in programming, as it helps others understand the code more easily.
 
 Please provide me with the problem or task you would like me to solve using JavaScript.</i>
 
