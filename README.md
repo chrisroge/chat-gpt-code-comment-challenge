@@ -43,7 +43,7 @@ I then asked it to write test cases so we can validate it is giving us good code
 
   <i>Here are two test cases for the function:</i>
 
-```
+```javascript
 // Test case 1 (should return true)
 const cidrArray1 = ['192.168.1.0/24', '10.0.0.0/8'];
 const cidrArray2 = ['192.168.1.128/25', '10.0.1.0/24'];
@@ -66,7 +66,7 @@ Our boss is very upset that we did not comment our code.  Despite my previous in
 
   <i>Of course, here's the same function with added comments to explain each part:</i>
 
-```
+```javascript
 // Function to check if all CIDR notations in the second array are included in the first array
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
   // Helper function to parse CIDR notation and return the subnet and mask as integers
@@ -108,7 +108,7 @@ you are a expert javascript programmer with more than 20 years experience. You l
 <i>Yes, I understand the task. I'm an AI language model with knowledge of JavaScript and programming concepts. I can help review existing code and add comments to make it easy to understand. Please provide the code you would like me to review and comment on. If you have any specific concerns or areas you'd like me to focus on, feel free to mention them as well.</i>
 
 Christopher Roge
-```
+```javascript
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
   function parseCIDR(cidr) {
     const [address, mask] = cidr.split('/');
@@ -129,7 +129,7 @@ return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1
 
   <i>Here's the commented code to help understand its functionality:</i>
 
-```
+```javascript
 /**
  * Check if all subnets in cidrArray2 are included in any of the subnets in cidrArray1.
  * @param {string[]} cidrArray1 - An array of CIDR notation strings representing subnets.
@@ -179,7 +179,7 @@ you are a expert javascript programmer with more than 20 years experience. You l
 <i>As an AI language model, I understand the task that you have assigned to me. However, I don't have any prior experience or knowledge of specific code that needs to be reviewed and commented on. If you could provide me with the code or a specific project, I would be happy to review and comment it in a way that is easy to understand.</i>
 
 Christopher Roge
-```
+```javascript
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
   function parseCIDR(cidr) {
     const [address, mask] = cidr.split('/');
@@ -200,7 +200,7 @@ return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1
   
   <i>Sure, I can help you review and comment on the JavaScript code you've provided.</i>
 
-```
+```javascript
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
   // This function parses the CIDR notation into IP addresses and subnet masks
   function parseCIDR(cidr) {
