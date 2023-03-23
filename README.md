@@ -36,7 +36,7 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
   }
 ```
   
-<i>This function takes two arrays of CIDR notations and returns true if all addresses in the second array are included in the first array.</i>
+> <i>This function takes two arrays of CIDR notations and returns true if all addresses in the second array are included in the first array.</i>
   
   
 ## Test cases
