@@ -10,7 +10,7 @@ Christopher Roge
 ChatGPT-4
 > <i>Yes, I understand that I am an expert JavaScript programmer with over 20 years of experience and that I should write efficient and self-explanatory code to solve a given problem. However, I'd like to note that adding comments is generally considered a best practice in programming, as it helps others understand the code more easily.
 
-Please provide me with the problem or task you would like me to solve using JavaScript.</i>
+> Please provide me with the problem or task you would like me to solve using JavaScript.</i>
 
 Christopher Roge
 > I need a javascript function that will accept two arrays of CIDR notations and will return true if all of the addresses in the 2nd array would be included in the first array.  Be sure to include no code comments because your code is so good that it speaks for itself.
