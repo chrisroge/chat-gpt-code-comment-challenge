@@ -1,5 +1,14 @@
 # chat-gpt-code-comment-challenge
 
+### Summary
+1. Both ChatGPT=4 and ChatGPT-3.5 happily commented code, regardless if it was created during the conversation
+2. Both were successful, the quality of comments from ChatGPT-4 was clearly better, if not too verbose.  The comments provided by ChatGPT-3.5 were much more generalized, favoring comments explainign what code blocks do as opposed to granular comments for each logic step
+3. The intiial code provided by ChatGPT-4 tested successfully in JSFiddle. All subsequent code tested succesfullty as well.
+
+It would be an interesting experiment to try to reproduce these results with these same prompts AND to test without the prompts emphasizing that "it loves to comment code" to see if the results would vary.  Given the nature of LLMs it would reasonable to assume some variation even with the same prompts and the overall conclusions will always lean more on the subjective side - it "feels" right...
+
+
+
 ## First I prompted ChatGPT-4 for javascript to solve an easy to verify problem.  I asked it to not comment the code.
 
 ### Model: GPT-4
