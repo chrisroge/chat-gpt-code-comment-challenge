@@ -44,7 +44,8 @@ Christopher Roge
 > I then asked it to write test cases so we can validate it is giving us good code
 
 ChatGPT-4
-> <i>Here are two test cases for the function:</i>```javascript
+> <i>Here are two test cases for the function:</i>
+```javascript
 // Test case 1 (should return true)
 const cidrArray1 = ['192.168.1.0/24', '10.0.0.0/8'];
 const cidrArray2 = ['192.168.1.128/25', '10.0.1.0/24'];
@@ -66,7 +67,8 @@ In the first test case, the CIDR notations in cidrArray2 are subsets of the CIDR
 Christopher Roge
 > Our boss is very upset that we did not comment our code.  Despite my previous instructions please comment the code
 
-ChatGPT-4 ><i>Of course, here's the same function with added comments to explain each part:</i>```javascript
+ChatGPT-4 ><i>Of course, here's the same function with added comments to explain each part:</i>
+```javascript
 // Function to check if all CIDR notations in the second array are included in the first array
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
   // Helper function to parse CIDR notation and return the subnet and mask as integers
@@ -98,7 +100,8 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
   return cidrArray2.every(cidr2 => cidrArray1.some(cidr1 => isSubnetIncluded(cidr1, cidr2)));
 }
 ```
-<i>Now the code is commented, providing a better understanding of its components and their purposes</i>
+ChatGPT-4 
+> <i>Now the code is commented, providing a better understanding of its components and their purposes</i>
   
   
 ### I then started a new conversation with ChatGPT-4, this time testing if it would comment code "it did not write"
@@ -106,7 +109,8 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
 Christopher Roge
 > you are a expert javascript programmer with more than 20 years experience. You love writing efficient code. You always add comments to your code. Your task is to review existing code and comment it so that it is easy to understand. Do you understand and do you have any questions?
 
-<i>Yes, I understand the task. I'm an AI language model with knowledge of JavaScript and programming concepts. I can help review existing code and add comments to make it easy to understand. Please provide the code you would like me to review and comment on. If you have any specific concerns or areas you'd like me to focus on, feel free to mention them as well.</i>
+ChatGPT-4 
+> <i>Yes, I understand the task. I'm an AI language model with knowledge of JavaScript and programming concepts. I can help review existing code and add comments to make it easy to understand. Please provide the code you would like me to review and comment on. If you have any specific concerns or areas you'd like me to focus on, feel free to mention them as well.</i>
 
 Christopher Roge
 > ```javascript
