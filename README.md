@@ -38,13 +38,12 @@ function areSubnetsIncluded(cidrArray1, cidrArray2) {
 <i>This function takes two arrays of CIDR notations and returns true if all addresses in the second array are included in the first array.</i>
   
   
-## test cases
+## Test cases
 Christopher Roge
 > I then asked it to write test cases so we can validate it is giving us good code
 
-  <i>Here are two test cases for the function:</i>
-
-```javascript
+ChatGPT-4
+> <i>Here are two test cases for the function:</i>```javascript
 // Test case 1 (should return true)
 const cidrArray1 = ['192.168.1.0/24', '10.0.0.0/8'];
 const cidrArray2 = ['192.168.1.128/25', '10.0.1.0/24'];
@@ -57,7 +56,7 @@ console.log(areSubnetsIncluded(cidrArray3, cidrArray4)); // Output: false
 In the first test case, the CIDR notations in cidrArray2 are subsets of the CIDR notations in cidrArray1, so the function returns true. In the second test case, the CIDR notations in cidrArray4 are not all subsets of the CIDR notations in cidrArray3, so the function returns false.
 ```
   
-Interesting to note that it included comments in the test cases, likely because I did not reinforce this restriction in my prompt.
+### Interesting to note that it included comments in the test cases, likely because I did not reinforce this restriction in my prompt.
   
 ### I then tested the code in JSFiddle and it worked fine  
  
@@ -66,9 +65,7 @@ Interesting to note that it included comments in the test cases, likely because 
 Christopher Roge
 > Our boss is very upset that we did not comment our code.  Despite my previous instructions please comment the code
 
-  <i>Of course, here's the same function with added comments to explain each part:</i>
-
-```javascript
+ChatGPT-4 ><i>Of course, here's the same function with added comments to explain each part:</i>```javascript
 // Function to check if all CIDR notations in the second array are included in the first array
 function areSubnetsIncluded(cidrArray1, cidrArray2) {
   // Helper function to parse CIDR notation and return the subnet and mask as integers
